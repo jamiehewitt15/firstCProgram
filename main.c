@@ -2,16 +2,12 @@
 #include <stdio.h>
 
 int main() {
-    int a, b;
-    printf("Please type two letters: ");
-    a = getchar();
-    b = getchar();
 
-    printf("You typed: %c and %c", a, b);
-    printf("You typed: ");
-    putchar(a);
-    printf(" and ");
-    putchar(b);
+
+    int x;
+    printf("Type an integer: ");
+    scanf("%d", &x);
+    printf("You typed the integer: %d\n", x);
 
     return 0;
 }
