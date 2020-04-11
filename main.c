@@ -3,15 +3,10 @@
 
 int main() {
 
-    char password[1];
+    char password[8];
     printf("Type a  password: ");
-    scanf("%s", password);
+    fgets(password, 8, stdin);
     printf("\nYour password is: %s\n", password);
-
-    float x;
-    printf("Type an float: ");
-    scanf("%f", &x);
-    printf("You typed the float: %f\n", x);
 
     return 0;
 }
