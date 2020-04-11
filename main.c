@@ -1,21 +1,28 @@
 /* Jamie Hewitt - Question 2 */
 #include <stdio.h>
+#define MAX_ARRAY_SIZE 100
 
 int main() {
-
-    float a;
-
+    int inputArray[MAX_ARRAY_SIZE];
+    int arrayEntries = 0;
+    int arraySum = 0;
+    int input;
     do {
-        printf("Please enter a positive number: ");
-        scanf("%f", &a);
-        if (a > 0){
-            printf("You entered: %f\n", a);
+        printf("Please enter input positive number: ");
+        scanf("%d", &input);
+        if (input > 0 && sizeof(input) <= 4){
+            printf("You entered: %d\n", input);
+            inputArray[arrayEntries] = input;
+            arrayEntries++;
         } else{
-            printf("Sorry, you must enter a positive number.\n");
+            printf("Sorry, you must enter input positive number.\n");
         }
-
-
-    } while(a != -1);
+    } while(input != -1);
+    for(int i=0; i < arrayEntries; i++)
+        {
+            arraySum = arraySum + inputArray[i];
+        }
+        printf("The sum of all input numbers is: %\n", arraySum);
         printf("Thank you, goodbye!");
         return 0;
 }
