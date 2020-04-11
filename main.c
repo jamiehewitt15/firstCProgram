@@ -2,22 +2,16 @@
 #include <stdio.h>
 
 int main() {
-    printf("Please enter a positive number: \n");
-    printf("My name is \'Jamie\'\n");
-    int age = 29;
-    printf("I am %d years old\n", age);
-    age = 35;
-    printf("I am %d years old\n", age);
-    printf("This is a backslash: \\\n");
+    int a, b;
+    printf("Please type two letters: ");
+    a = getchar();
+    b = getchar();
 
-    float pi;
-    pi = 22.00 / 7.0;
-    printf("PI is: %f\n",pi);
-
-    int c;
-    printf("Please type a letter: ");
-    c = getchar();
-    printf("\nYou typed: '%c'", c);
+    printf("You typed: %c and %c", a, b);
+    printf("You typed: ");
+    putchar(a);
+    printf(" and ");
+    putchar(b);
 
     return 0;
 }
