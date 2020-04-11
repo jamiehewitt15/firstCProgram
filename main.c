@@ -12,9 +12,12 @@ int main() {
 
     float pi;
     pi = 22.00 / 7.0;
-    printf("PI is: %f",pi);
+    printf("PI is: %f\n",pi);
 
-
+    int c;
+    printf("Please type a letter: ");
+    c = getchar();
+    printf("\nYou typed: '%c'", c);
 
     return 0;
 }
