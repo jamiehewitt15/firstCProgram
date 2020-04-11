@@ -3,10 +3,19 @@
 
 int main() {
 
-    char password[8];
-    printf("Type a  password: ");
-    fgets(password, 8, stdin);
-    printf("\nYour password is: %s\n", password);
+    float a;
 
-    return 0;
+    do {
+        printf("Please enter a positive number: ");
+        scanf("%f", &a);
+        if (a > 0){
+            printf("You entered: %f\n", a);
+        } else{
+            printf("Sorry, you must enter a positive number.\n");
+        }
+
+
+    } while(a != -1);
+        printf("Thank you, goodbye!");
+        return 0;
 }
